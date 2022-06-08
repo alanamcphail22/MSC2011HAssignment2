@@ -2,6 +2,7 @@
 # Alana McPhail 
 # June 8, 2022 
 
+# Git repository link: https://github.com/alanamcphail22/MSC2011HAssignment2
 
 # Variables: 
   # number: the character submission from user. 
@@ -15,7 +16,7 @@ numberN <- as.numeric(number)
 
 # Check if the user input is numeric. If not, print an error message and quit. Must be a positive, three digit number. 
 if (is.na(numberN) || numberN < 100) {
-  print("Error. Not a suitable submission. Quitting program")
+  print("Error. Not a suitable submission. Quitting program.")
 } else {
   # Check if the number is narcissistic. (A number that is equal to the sum fo the cubes of its own digits)
   ## Summing the cubes of the digits of the number
@@ -23,10 +24,10 @@ if (is.na(numberN) || numberN < 100) {
   ## If the sum is equal to the number then it is narcissistic
   if (numberC == numberN) {
     # Display the result  
-    print("Number is narcissistic! :)")
+    print(paste("The number", number, "is narcissistic! :)"))
   } else {
     ## Otherwise it is not
-    print("Number is not narcissistic. :(")
+    print(paste("The number", number, "is NOT narcissistic! :("))
   }
 }
 
